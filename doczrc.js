@@ -3,7 +3,6 @@ import path from "path";
 export default {
   typescript: true,
   files: ["./src/docz/**/*.mdx"],
-  dest: "docs",
   title: "@mmcuav/mmc-ui-react",
   port: 4000,
   menu: [
