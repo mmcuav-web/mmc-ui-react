@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig",
+    "compilerOptions": {
+        "declaration": true,
+        "declarationMap": false,
+        "sourceMap": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
