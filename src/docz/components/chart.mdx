@@ -6,4 +6,22 @@ menu: 组件列表
 
 # 图表统计类
 
-## 无人机飞行架次
+import { Playground, Props } from "docz";
+import { TaskStatusChart } from "@/components/TaskStatusChart";
+
+## 任务状态统计
+
+### Props 
+<Props of={TaskStatusChart} />
+
+### Component 
+<Playground>
+  <TaskStatusChart
+    data={[
+        {label: "待执行", status: 1, value: 2},
+        {label: "执行中", status: 2, value: 10},
+        {label: "已完成", status: 3, value: 20},
+        {label: "已取消", status: 4, value: 50},
+    ]}
+  />
+</Playground>

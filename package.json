@@ -1,7 +1,7 @@
 {
-  "name": "mmc-ui-react",
-  "version": "1.0.0",
-  "description": "mmcuav ui library for react",
+  "name": "@mmcweb/mmc-ui-react",
+  "version": "1.0.1",
+  "description": "mmcweb ui library for react",
   "main": "index.js",
   "keywords": [
     "react",
@@ -10,10 +10,11 @@
   ],
   "files": [
     "dist/*",
-    "lib",
+    "lib/*",
     "index.js",
     "package.json",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "docz:dev": "docz dev",
@@ -29,6 +30,7 @@
   "author": "chars",
   "license": "MIT",
   "dependencies": {
+    "@antv/g2": "^4.1.46",
     "classnames": "^2.3.1",
     "docz": "^2.4.0",
     "react": "^17.0.2",
@@ -48,6 +50,7 @@
     "cpr": "^3.0.1",
     "cross-env": "^7.0.3",
     "css-loader": "^6.6.0",
+    "gatsby-plugin-sass": "^5.8.0",
     "javascript-obfuscator": "^4.0.0",
     "mini-css-extract-plugin": "^2.5.3",
     "node-sass": "^7.0.1",
