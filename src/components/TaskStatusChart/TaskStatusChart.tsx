@@ -5,22 +5,22 @@ import { Chart } from '@antv/g2';
 export type ChartType = "Line" | "Bar" | "Pie"
 
 export interface AxisXCfg {
-    fontSize?: number;
-    fontColor?: string;
-    axisColor?: string;
-    barColor?: string;
+    fontSize?: number,
+    fontColor?: string,
+    axisColor?: string,
+    barColor?: string
 }
 
 export interface AxisYCfg {
-    fontSize?: number;
-    fontColor?: string;
-    axisColor?: string;
+    fontSize?: number,
+    fontColor?: string,
+    axisColor?: string
 }
 
 export interface TaskStatusEntity {
-    label: string;
-    status?: number;
-    value: number;
+    label: string,
+    status?: number,
+    value: number
 }
 
 export interface TaskStatusChartProps {

@@ -11,17 +11,61 @@ import { TaskStatusChart } from "@/components/TaskStatusChart";
 
 ## 任务状态统计
 
-### Props 
+### Component
+
+```jsx
+<TaskStatusChart />
+```
+
+### Props
+
 <Props of={TaskStatusChart} />
 
-### Component 
+### Basic usage
+
 <Playground>
   <TaskStatusChart
     data={[
-        {label: "待执行", status: 1, value: 2},
-        {label: "执行中", status: 2, value: 10},
-        {label: "已完成", status: 3, value: 20},
-        {label: "已取消", status: 4, value: 50},
+      { label: "待执行", status: 1, value: 2 },
+      { label: "执行中", status: 2, value: 10 },
+      { label: "已完成", status: 3, value: 20 },
+      { label: "已取消", status: 4, value: 50 }
+    ]}
+  />
+</Playground>
+
+## 无人机列表
+
+import { GroupList } from "@/components/GroupList";
+import "@/styles/_group_list.scss";
+
+### Component
+
+```jsx
+<GroupList />
+```
+
+### Props
+
+<Props of={GroupList} />
+
+### Basic usage
+
+<Playground>
+  <GroupList
+    data={[
+      {
+        group_id: "1",
+        group_name: "aaa",
+        parent_id: "-1",
+        children: [
+          {
+            group_id: "2",
+            group_name: "bbb",
+            parent_id: "1"
+          }
+        ]
+      }
     ]}
   />
 </Playground>

@@ -1,0 +1,18 @@
+.mmc-group-list {
+    background-color: #ccc;
+    box-sizing: border-box;
+    color: 14px;
+    .mmc-group-item {
+        &__header-wrapper {
+            
+        }
+        &__children-wrapper {
+            box-sizing: border-box;
+            padding-left: 12px;
+            max-height: 1000px;
+            &--collapse {
+                max-height: 0px;
+            }
+        }
+    }
+}
