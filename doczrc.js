@@ -1,9 +1,7 @@
-import path from "path";
-
 export default {
   typescript: true,
   files: ["./src/docz/**/*.mdx"],
-  title: "@mmcuav/mmc-ui-react",
+  title: "@mmcweb/mmc-ui-react",
   port: 4000,
   menu: [
     "使用指南",

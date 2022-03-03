@@ -1,16 +1,96 @@
 .mmc-group-list {
-    background-color: #ccc;
+    background-color: #ececec;
     box-sizing: border-box;
     color: 14px;
+    box-sizing: border-box;
+    padding: 8px 12px;
     .mmc-group-item {
-        &__header-wrapper {
-            
+        .mmc-group-item__header-wrapper {
+            height: 24px;
+            line-height: 24px;
+            .mmc-group-item__header {
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    width: 15px;
+                    height: 15px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .iconfont {
+                        font-size: 20px;
+                    }
+                }
+                .name {
+                }
+            }
         }
-        &__children-wrapper {
+        .mmc-group-item__children-wrapper {
             box-sizing: border-box;
-            padding-left: 12px;
+            padding-left: 30px;
             max-height: 1000px;
-            &--collapse {
+            transition: 0.3s;
+            overflow: hidden;
+            .mmc-group-item__devices-wrapper {
+                .mmc-group-item__device-wrapper {
+                    box-sizing: border-box;
+                    padding-left: 4px;
+                    .mmc-group-item__device-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .mmc-group-item__device-name {
+                            font-size: 12px;
+                        }
+                        .mmc-group-item__device-fns-wrapper {
+                            display: flex;
+                            align-items: center;
+                            .fn-wrapper {
+                                width: 24px;
+                                height: 24px;
+                                // background-color: #ccc;
+                                margin-right: 8px;
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                &:last-child {
+                                    margin-right: 0px;
+                                }
+                                .iconfont {
+                                    cursor: inherit;
+                                    font-size: 24px;
+                                }
+                                &--location,
+                                &--airway,
+                                &--video,
+                                &--control {
+                                    .iconfont {
+                                        color: $primary-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--collapse {
+            > .mmc-group-item__header-wrapper {
+                .mmc-group-item__header {
+                    .icon {
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+            .mmc-group-item__children-wrapper {
                 max-height: 0px;
             }
         }

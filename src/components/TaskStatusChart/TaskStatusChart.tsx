@@ -24,30 +24,15 @@ export interface TaskStatusEntity {
 }
 
 export interface TaskStatusChartProps {
-    /** 数据 TaskStatusEntity: { label:string, status?:number, value: number } */
+    /** TaskStatusEntity 详情见 Entity desc 部分 */
     data: TaskStatusEntity[];
     /** 统计图类型 */
     type?: Exclude<ChartType, "Pie">;
     /** 高度 */
     height?: number;
-    /**
-     * x 轴配置
-     *  {
-            fontSize?: number;
-            fontColor?: string;
-            axisColor?: string;
-            barColor?: string;
-        } 
-     */
+    /** x 轴配置, AxisXCfg 详情见 Entity desc 部分 */
     axisXCfg?: AxisXCfg;
-    /**
-     * y 轴配置
-     *  {
-            fontSize?: number;
-            fontColor?: string;
-            axisColor?: string;
-        } 
-     */
+    /** x 轴配置, AxisYCfg 详情见 Entity desc 部分 */
     axisYCfg?: AxisYCfg;
 }
 

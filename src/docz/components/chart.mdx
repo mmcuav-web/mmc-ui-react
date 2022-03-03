@@ -21,6 +21,29 @@ import { TaskStatusChart } from "@/components/TaskStatusChart";
 
 <Props of={TaskStatusChart} />
 
+### Entity desc
+
+```ts
+interface TaskStatusEntity {
+  label: string; // 状态名称
+  status?: number; // 状态数值
+  value: number; // 状态总数
+}
+
+interface AxisXCfg {
+  fontSize?: number; // x 轴文字大小
+  fontColor?: string; // x 轴文字颜色
+  axisColor?: string; // x 轴颜色
+  barColor?: string; // 柱状图颜色
+}
+
+interface AxisYCfg {
+  fontSize?: number; // y 轴文字大小
+  fontColor?: string; // y 轴文字颜色
+  axisColor?: string; // y 轴颜色
+}
+```
+
 ### Basic usage
 
 <Playground>
@@ -37,7 +60,7 @@ import { TaskStatusChart } from "@/components/TaskStatusChart";
 ## 无人机列表
 
 import { GroupList } from "@/components/GroupList";
-import "@/styles/_group_list.scss";
+import "@/styles/mmc.scss";
 
 ### Component
 
@@ -49,6 +72,28 @@ import "@/styles/_group_list.scss";
 
 <Props of={GroupList} />
 
+### Entity desc
+
+```ts
+interface DeviceEntity {
+  device_h_id: string; // 设备硬件id
+  device_name: string; //设备名称
+  location?: boolean; // 是否定位
+  airway?: boolean; // 是否显示航线
+  video?: boolean; // 是否显示视频
+  control?: boolean; // 是否弹出控制台
+}
+
+interface GroupEntity {
+  group_id: string; // 组织 id
+  group_name: string; // 组织名称
+  parent_id: string; // 组织父级 id
+  children?: GroupEntity[]; // 组织下级列表
+  collapse?: boolean; // 是否折叠
+  devices?: DeviceEntity[]; // 组织设备列表
+}
+```
+
 ### Basic usage
 
 <Playground>
@@ -56,13 +101,25 @@ import "@/styles/_group_list.scss";
     data={[
       {
         group_id: "1",
-        group_name: "aaa",
+        group_name: "市局",
         parent_id: "-1",
         children: [
           {
             group_id: "2",
-            group_name: "bbb",
-            parent_id: "1"
+            group_name: "分局1",
+            parent_id: "1",
+            devices: [
+              {
+                device_h_id: "yyyy",
+                device_name: "入云龙2"
+              }
+            ]
+          }
+        ],
+        devices: [
+          {
+            device_h_id: "xxxx",
+            device_name: "入云龙1"
           }
         ]
       }

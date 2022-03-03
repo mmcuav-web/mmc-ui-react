@@ -1,0 +1,86 @@
+{
+  "id": "3027218",
+  "name": "mmc-ui",
+  "font_family": "iconfont",
+  "css_prefix_text": "mmc-icon-",
+  "description": "mmc-ui",
+  "glyphs": [
+    {
+      "icon_id": "27229383",
+      "name": "battery-charge",
+      "font_class": "battery-charge",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "12011697",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e7b3",
+      "unicode_decimal": 59315
+    },
+    {
+      "icon_id": "23938608",
+      "name": "控制_线型",
+      "font_class": "kongzhi_xianxing",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "23938615",
+      "name": "轨迹",
+      "font_class": "guiji",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "18622343",
+      "name": "position",
+      "font_class": "position",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "21095611",
+      "name": "航线",
+      "font_class": "hangxian",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "25357659",
+      "name": "video",
+      "font_class": "video",
+      "unicode": "e7ad",
+      "unicode_decimal": 59309
+    },
+    {
+      "icon_id": "703121",
+      "name": "menu-down",
+      "font_class": "menudown",
+      "unicode": "e94f",
+      "unicode_decimal": 59727
+    },
+    {
+      "icon_id": "703122",
+      "name": "menu-left",
+      "font_class": "menuleft",
+      "unicode": "e950",
+      "unicode_decimal": 59728
+    },
+    {
+      "icon_id": "703123",
+      "name": "menu-right",
+      "font_class": "menuright",
+      "unicode": "e951",
+      "unicode_decimal": 59729
+    },
+    {
+      "icon_id": "703124",
+      "name": "menu-up",
+      "font_class": "menuup",
+      "unicode": "e952",
+      "unicode_decimal": 59730
+    }
+  ]
+}

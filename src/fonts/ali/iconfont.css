@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3027218 */
+  src: url('iconfont.woff2?t=1646270861457') format('woff2'),
+       url('iconfont.woff?t=1646270861457') format('woff'),
+       url('iconfont.ttf?t=1646270861457') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mmc-icon-battery-charge:before {
+  content: "\e607";
+}
+
+.mmc-icon-search:before {
+  content: "\e7b3";
+}
+
+.mmc-icon-kongzhi_xianxing:before {
+  content: "\e686";
+}
+
+.mmc-icon-guiji:before {
+  content: "\e68d";
+}
+
+.mmc-icon-position:before {
+  content: "\e70b";
+}
+
+.mmc-icon-hangxian:before {
+  content: "\e609";
+}
+
+.mmc-icon-video:before {
+  content: "\e7ad";
+}
+
+.mmc-icon-menudown:before {
+  content: "\e94f";
+}
+
+.mmc-icon-menuleft:before {
+  content: "\e950";
+}
+
+.mmc-icon-menuright:before {
+  content: "\e951";
+}
+
+.mmc-icon-menuup:before {
+  content: "\e952";
+}
+
